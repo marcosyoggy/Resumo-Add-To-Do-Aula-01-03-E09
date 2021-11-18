@@ -1,0 +1,82 @@
+body {
+    position: relative;
+}
+.container {
+    width: 400px;
+    height: 500px;
+    border: 4px ridge yellowgreen;
+
+}
+
+.internalForm {
+        border: 5px ridge yellowgreen;
+
+}
+
+.newClientDisplay {
+    position: absolute;
+    width: 340px;
+    height: 110px;
+    top: 100px;
+    left:  140px;
+    border: 4px ridge yellowgreen;
+}
+
+.clientBank {
+    position: absolute;
+    width: 340px;
+    height: 430px;
+    top: 180px;
+    left:  900px;
+    border: 4px ridge yellowgreen;
+}
+
+.headerClientBank {
+    position: sticky;
+    top: 0px;
+}
+
+.acessButtonClientBank {
+    position: relative;
+}
+
+.acessButtonDeleteForm {
+    position: absolute;
+    top: 0px;
+    left: 220px;
+}
+
+.formDeleteClientData {
+    position: absolute;
+    top: 0px;/*'top: 300px;'*/
+    left: 900px;/*130px;*/
+    width: 350px;
+    height: 165px;
+    border: 4px ridge yellowgreen;
+
+}
+
+.formLoginClientData {
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    border: 2px ridge green;
+}
+
+.userIcon {
+    position: absolute; 
+    top: 50px;
+    left: 850px;
+    cursor: pointer;
+}
+
+.loggedUserScreen {
+    position: absolute;
+    top: 60px;
+    left: 900px;
+   
+}
+
+    
+
+

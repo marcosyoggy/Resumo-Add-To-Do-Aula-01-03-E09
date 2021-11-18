@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>RESUMO_TO_DO</title>
+</head>
+
+<body class="parent_Body bg-info text-white ">
+
+  <h1>Resumo To Do + Revisão Raio X</h1>
+  <h6>("...demorô, mas saiu....UFA!!!")</h6>
+
+  <div class="container rounded ">
+
+    <div class="d-flex justify-content-center bg-dark">
+      <i class="fas fa-house-user p-2 m-1"></i>
+      <span class="datePresent p-1 m-1"></span>
+      <i class="far fa-clock  p-2 m-1"></i>
+      <span class="clockTop text-white  p-1 m-1"></span>
+    </div>
+
+    <div class="row bg-dark rounded ">
+      <div class="col border border-white rounded ">
+        <div class="row justify-content-around">
+          <div class="col-2  d-flex justify-content-center m-1">
+            <button class="acessButtonLoginForm border border-white rounded-pill text-white bg-dark"
+              value="login_Button" data-buttonlogin="acessFormLogin">Login</button>
+          </div>
+          <div class="col-4 d-flex justify-content-center m-1">
+            <button class="acessButtonClientBank border border-white rounded-pill text-white bg-dark"
+              data-buttonclientbank="acessClientBank">Client Bank
+              <span
+                class="countClients position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="newClientDisplay rounded bg-light">
+      <div class="bg-secondary ">
+        <p class="text-warning text-center my-0"><strong><em>Welcome!!!</em></strong></p>
+      </div>
+      <div class="welcomeClientDisplay my-0"></div>
+    </div>
+
+    <div class="clientBank rounded m-1 bg-light overflow-auto d-none">
+      <header class="headerClientBank border p-2 text-dark bg-info text-center">
+        <strong><em>Client Bank</em></strong>
+        <div class="col">
+          <div class="d-flex row-cols-2 justify-content-between">
+            <button class="exitButtonClientBank col-3 border rounded bg-dark text-white text-center"
+              data-exitbuttonclientbank="acessClientBank">Exit</button>
+            <button class="acessButtonDeleteForm col-3 border rounded bg-dark text-white"
+              data-buttonformdelete="acessFormDelete">Delete</button>
+          </div>
+        </div>
+      </header>
+      <div class="bankStore "></div>
+    </div>
+
+    <div class="container internalForm bg-danger text-light" style="width: 350px; height: 250px;">
+      <form class="inviteForm border-dark rounded bg-secondary p-1 ">
+        <label class="row justify-content-center">Invite Your Friends</label>
+        <input type="text" placeholder="Enter Name" class="rounded" name="invitedName">
+        <input type="text" placeholder="Enter Age" class="rounded" name="invitedAge">
+        <input type="text" placeholder="Enter Occupation" class="rounded" name="invitedOccupation">
+
+        <div class="col">
+          <div class="d-flex row-cols-2 justify-content-between">
+            <input class="submitInvitedButton border rounded p-1 my-1 mx-3 bg-dark text-white col-2" type="submit"
+              value="Add">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <form class="formDeleteClientData rounded bg-secondary p-1 d-none " data-formdelete="acessFormDelete">
+    <div class="mb-3 ">
+      <label class="form-label border border-dark rounded-pill p-1 my-1 mx-1 bg-dark"> Choose
+        to delete the data client</label>
+      <input class="form-control px-1" name="deleteData">
+      <div class="form-text mx-1">Digit the occupation of client</div>
+      <div class="row justify-content-between">
+        <button class="submitButton border border-dark rounded-pill p-1 my-1 mx-3 bg-dark text-white">Apply</button>
+        <button class="exitButtonDeleteForm border border-dark rounded p-1 my-1 mx-3 text-white bg-dark"
+          data-exitbuttondeleteform="acessFormDelete">Exit</button>
+      </div>
+    </div>
+  </form>
+
+  <form class="formLoginClientData border rounded bg-secondary text-warning p-1 d-none"
+    style="width: 400px; height: 295px;" data-formlogin="acessFormLogin">
+    <fieldset class="inputFieldset p-2">
+      <legend class="text-warning">User Login</legend>
+      <div class="loginName row justify-content-around p-1">
+        <label class="text-warning col-2">Name: </label>
+        <input type="text" placeholder="User name." name="inputName" class="col-8 rounded" autofocus>
+      </div>
+      <div class="loginAge row justify-content-around text-warning p-1">
+        <label class="col-2">Age: </label>
+        <input type="text" placeholder="User age." name="inputAge" class="col-8 rounded">
+      </div>
+      <div class="loginOccupation row justify-content-around text-warning p-1">
+        <label class="col-2 ">Occupation: </label>
+        <input type="text" placeholder="user occupation." name="inputOccupation" class="col-8 rounded">
+      </div>
+      <div class="d-flex row justify-content-around p-1">
+        <label class="col-2 ">city:</label>
+        <input type="text" placeholder="user city." name="inputcity" class="col-8 rounded">
+      </div>
+      <div class="d-flex row justify-content-around p-1">
+        <label class="col-2 ">country:</label>
+        <input type="text" placeholder="user country." name="inputcountry" class="col-8 rounded">
+      </div>
+      <div class="col">
+        <div class="d-flex row-cols-2 justify-content-between">
+          <input class="submitLoginButton border border-dark rounded-pill p-1 my-1 mx-3 bg-dark text-white col-2"
+            type="submit" value="Add">
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <i class="userIcon fas fa-user-tie fa-3x border border-dark p-2 text-center rounded-circle bg-secondary d-none"
+    data-usericon="acessUserIcon">
+  </i>
+  <div class="loggedUserScreen border border-dark rounded bg-warning p-1 text-dark d-none"
+    style="width: 270px; height: 260px;">
+    <h5 style="text-decoration: underline;">Logged User</h5>
+    <div class="col border border-danger my-1" style="width: 250px; height: 180px;">
+      <div class="displayLoogedUser row-cols-1 justify-content-start py-1"></div>
+    </div>
+    <button class="exitButtonLoggedUserScreen border border-dark rounded text-white bg-dark col-4"
+      data-exitbuttonloggeduser="acessUserIcon">Exit</button>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/018be57abf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
