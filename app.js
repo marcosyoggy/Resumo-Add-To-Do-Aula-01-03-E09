@@ -174,7 +174,7 @@ const invitedClientData = event => {
         event.target.reset()
         return
     }
-    alert("Por Favor...complete o preencimento dos dados!!!")
+    alert("Por Favor...complete o preenchimento dos dados!!!")
 }
 
 dateHeader(dayWeeks[dateNow.getDay()], dateNow.getDate(), months[dateNow.getMonth()])
